@@ -29,13 +29,6 @@ export default function (
     ]
   });
 
-  
-
-  // Helpers
-  // plop.setHelper('createPortNumber', function () {
-  //   return Math.floor(Math.random() * 1000) + 4000;
-  // });
-
   // Case Modifiers
   // camelCase: changeFormatToThis
   // snakeCase: change_format_to_this
