@@ -22,10 +22,13 @@ export default function (
         type: 'addMany',
         destination: './apps/{{name}}',
         base: '.templates/app',
-        templateFiles: '.templates/app/**/*'
+        templateFiles: '.templates/app/**/*',
+        data: {
+          pwPort: Math.floor(Math.random() * 1000) + 4000
+        }
       },
       ({ name }) =>
-        `\n\n 🎉\n\n 🌟 ${name} app generated!\nIn order for Playwright to work you will need to grab the port assigned to preview job\nin apps/${name}/package.json and change it in the playwright.config.ts\n\nDon't forget to run pnpm install!\n\n 🎉\n\n`
+        `\n\n 🎉\n\n 🌟 ${name} app generated!\n\nDon't forget to run pnpm install!\n\n 🎉\n\n`
     ]
   });
 
