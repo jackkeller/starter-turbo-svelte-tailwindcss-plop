@@ -6,9 +6,22 @@ This starter has boilerplate that allows for easy app generation using [Plop.js]
 
 Use this as a template for a [new repository](https://github.com/new?template_name=starter-turbo-svelte-tailwindcss-plop&template_owner=jackkeller).
 
+
+### Initial Setup
+
+> If you're more into using yarn or npm you'd just delete the pnpm-lock.yaml, change the `packageManager` field in the root package.json and run your install of choice.
+
 ```sh
 pnpm install
 pnpm dev
+```
+
+### Generating a new app
+
+> Run the script below and follow the prompts.
+
+```sh
+pnpm generate:app
 ```
 
 ## What's inside?
