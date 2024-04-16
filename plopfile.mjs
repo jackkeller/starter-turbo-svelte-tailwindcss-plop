@@ -20,9 +20,9 @@ export default function (
     actions: [
       {
         type: 'addMany',
-        destination: './apps/{{name}}',
+        destination: './apps/{{lowerCase name}}',
         base: '.templates/app',
-        templateFiles: '.templates/app/**/*',
+        templateFiles: ['.templates/app/**/*', '.templates/app/.*'],
         data: {
           pwPort: Math.floor(Math.random() * 1000) + 4000
         }
