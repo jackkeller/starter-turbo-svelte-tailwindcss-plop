@@ -4,10 +4,11 @@ This starter has boilerplate that allows for easy app generation using [Plop.js]
 
 ## Using this example
 
-Run the following command:
+Use this as a template for a [new repository](https://github.com/new?template_name=starter-turbo-svelte-tailwindcss-plop&template_owner=jackkeller).
 
 ```sh
-npx create-turbo@latest -e with-svelte
+pnpm install
+pnpm dev
 ```
 
 ## What's inside?
@@ -30,3 +31,6 @@ This Turborepo has some additional tools already setup for you:
 - [TypeScript](https://www.typescriptlang.org/) for static type checking
 - [ESLint](https://eslint.org/) for code linting
 - [Prettier](https://prettier.io) for code formatting
+- [Playwright](https://playwright.dev) for integration testing
+- [Vitest](https://vitest.dev) for unit tests
+- [Plop.js](plopjs.com) for generating additional apps
