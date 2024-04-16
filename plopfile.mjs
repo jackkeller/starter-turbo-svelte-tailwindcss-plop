@@ -25,8 +25,13 @@ export default function (
         templateFiles: '.templates/app/**/*'
       },
       ({ name }) =>
-        `\n\n 🎉\n\n 🌟 ${name} app generated!\nIn order for Playwright to work you will need to grab the port assigned to preview job\nin apps/${name}/package.json and change it in the playwright.config.ts\n\n 🎉\n\n`
+        `\n\n 🎉\n\n 🌟 ${name} app generated!\nIn order for Playwright to work you will need to grab the port assigned to preview job\nin apps/${name}/package.json and change it in the playwright.config.ts\n\nDon't forget to run pnpm install!\n\n 🎉\n\n`
     ]
+  });
+
+  // Helpers
+  plop.setHelper('createPortNumber', function () {
+    return Math.floor(Math.random() * 1000) + 4000;
   });
 
   // Case Modifiers
